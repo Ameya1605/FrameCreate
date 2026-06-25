@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SpecOS | Architect Before You Code",
+  title: "CreateFrame | Architect Before You Code",
   description: "The technical control plane for modern builders. Define schemas, API endpoints, and prompts in one place.",
 };
 

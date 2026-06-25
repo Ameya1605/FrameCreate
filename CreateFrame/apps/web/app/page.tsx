@@ -24,7 +24,7 @@ export default function Home() {
           </h1>
 
           <p className="text-zinc-500 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed font-medium">
-            SpecOS is the technical control plane for modern builders. Define your schemas,
+            CreateFrame is the technical control plane for modern builders. Define your schemas,
             API endpoints, and prompts in one place. Sync directly to GitHub.
           </p>
 
@@ -71,7 +71,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-2 opacity-30 grayscale hover:grayscale-0 transition-all">
             <Cpu size={16} />
-            <span className="text-xs font-black uppercase tracking-[0.3em]">SpecOS MVP</span>
+            <span className="text-xs font-black uppercase tracking-[0.3em]">CreateFrame MVP</span>
           </div>
           <p className="text-zinc-600 text-[10px] uppercase font-bold tracking-widest">
             Built for the elite 1% of builders.

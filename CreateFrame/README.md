@@ -2,5 +2,5 @@
 sdk: docker
 ---
 
-# SpecOS API
-Built with SpecOS - Architecture First.
+# CreateFrame API
+Built with CreateFrame - Architecture First.

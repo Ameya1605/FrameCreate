@@ -1,4 +1,4 @@
-name: SpecOS CI
+name: CreateFrame CI
 
 on:
   push:

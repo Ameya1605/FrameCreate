@@ -81,7 +81,7 @@ export default function Dashboard() {
     const deleteProject = async (id: number, e: React.MouseEvent) => {
         e.preventDefault();
         e.stopPropagation();
-        if (!confirm('Remove this workspace from SpecOS? Your GitHub repo will not be affected.')) return;
+        if (!confirm('Remove this workspace from CreateFrame? Your GitHub repo will not be affected.')) return;
         try {
             await api.delete(`/projects/${id}`);
             if (activeProject?.id === id) setActiveProject(null);
@@ -128,7 +128,7 @@ export default function Dashboard() {
                     </div>
                     <div className="flex items-center gap-2 ml-4">
                         <Cpu size={14} className="text-blue-500" />
-                        <span className="text-xs text-zinc-400 font-bold tracking-wider uppercase">SpecOS</span>
+                        <span className="text-xs text-zinc-400 font-bold tracking-wider uppercase">CreateFrame</span>
                         <span className="text-zinc-700 text-xs">— workspace</span>
                     </div>
                 </div>
@@ -330,7 +330,7 @@ export default function Dashboard() {
                                                 <span className="text-blue-400">features</span>, <span className="text-emerald-400">schemas</span>, <span className="text-purple-400">endpoints</span>, and <span className="text-pink-400">UI components</span>.
                                             </div>
                                             <div className="mt-4 text-zinc-700">
-                                                {`$ specos generate --all   # AI generates code for each layer`}
+                                                {`$ CreateFrame generate --all   # AI generates code for each layer`}
                                             </div>
                                         </div>
                                     </div>
