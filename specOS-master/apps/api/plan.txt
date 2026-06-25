@@ -1,0 +1,36 @@
+# Backend Plan & Status
+
+## DONE
+- [x] FastAPI setup with CORS and Middleware
+- [x] SQLite database integration
+- [x] GitHub OAuth (Login & Callback)
+- [x] Secure token storage (Fernet encryption)
+- [x] Project management endpoints (Create, List)
+- [x] Schema/Entity management
+- [x] API Endpoint definition
+- [x] Prompt template definition
+- [x] "Push to GitHub" feature (creates spec.json)
+- [x] Generators: Prisma Schema & FastAPI boilerplate
+
+## TODO
+- [ ] Add better error handling for GitHub API limits
+- [ ] Support PostgreSQL for production (Requirement for AWS/Render)
+- [ ] Add validation for schema fields (types, constraints)
+- [ ] Dockerize backend for portable deployment (AWS/Render)
+- [ ] Research & implement Render Blueprint or AWS ECS configuration
+
+## The Greenfield Wizard (New Projects)
+- [ ] Define "Project Presets" (FastAPI + Next.js Monorepo, default)
+- [ ] AI Feature Extractor: Convert plain text descriptions into `Feature` models
+- [ ] AI Schema Architect: Suggest standard DB fields based on feature requirements
+- [ ] Scaffold Engine: Generate directory structure (apps/api, apps/web) and push to GitHub
+
+## Context Awareness (Existing Projects)
+- [ ] Commit History Parser: Analyze recent activity to auto-update feature status
+- [ ] Lean Spec Synthesis: One-shot LLM summary of scanned routes/tables
+
+## Governance & CI/CD Strategy
+- [ ] Implement "Branch Selection": Allow users to choose target branch (default: `main`)
+- [ ] Protected Branch Workflow: SpecOS pushes to `specos/proposed` to trigger PRs
+- [ ] GitHub Webhooks: Notify SpecOS backend when PRs are merged to update the spec
+- [ ] Auto-generate GitHub Actions YAML: Push `.github/workflows/ci.yml` during initialization
